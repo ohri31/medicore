@@ -7,18 +7,18 @@
               <div class="panel panel-info">
                 <div class="panel-heading">Filter pretrage</div>
                 <div class="panel-body">
-                  <form action="" method="post">
+                  <form action="" method="get">
                     <div class="form-group">
                       <label>Lokacija:</label>
-                      <input type="text" class="form-control" />
+                      <input name="lokacija" type="text" class="form-control" />
                     </div>
                     <div class="form-group">
                       <label>Tip donacije:</label>
-                      <input type="text" class="form-control" />
+                      <input name="tipdonacije" type="text" class="form-control" />
                     </div>
                     <div class="form-group">
                       <label>Ključna riječ:</label>
-                      <input type="text" class="form-control" />
+                      <input name="keyword" type="text" class="form-control" />
                     </div>
                     <input type="submit" class="btn btn-primary btnfix col-sm-12" value="Pretraži" />
                   </form>

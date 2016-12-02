@@ -17,10 +17,23 @@ class DonationsController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
         if(!Auth::check()) return redirect('home');
-        $donations = Donation::paginate(25);
+
+        if($request != null){
+          $lokacija     = $request->input('lokacija');
+          //$tipdonacije  = $request->input('tipdonacije');
+          $keyword      = $request->input('keyword');
+        }
+
+        $d = Donation::query();
+
+        if($lokacija != "" && $lokacija != null) $d->where('lokacija', '=', $lokacija);
+        //if($tipdonacije != "" && $tipdonacije != null) $d->where('tipdonacije', '=', $tipdonacije);
+        if($keyword != "" && $keyword != null) $d->where('doniram', 'LIKE', $keyword.'%');
+
+        $donations = $d->latest()->paginate(10);
 
         return view('donations.index', compact('donations'));
     }
