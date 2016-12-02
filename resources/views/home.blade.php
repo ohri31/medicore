@@ -4,7 +4,7 @@
 <!-- Cover image and call to action -->
 <div class="cover-image">
   <div class="col-md-offset-2 col-md-8 col-sm-12">
-    <h1>Doniraj socijalno ugroženima</h1>
+    <h1>Pomozi socijalno ugroženima</h1>
     <span class="opis">Fabrika sreće je <b>servis</b> koji pruža ljudima mogućnost da brzo i efikasno pristupe procesu doniranja sredstava i pomaganja drugima.</span>
       <div class="clearfix"></div>
 

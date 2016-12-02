@@ -3,38 +3,22 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Donation {{ $donation->id }}</div>
+            <div class="col-md-8 col-md-offset-2 col-sm-12" style="margin-top:30px;">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Informacije o donaciji</div>
                     <div class="panel-body">
-
-                        <a href="{{ url('donations/' . $donation->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Donation"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
-                        {!! Form::open([
-                            'method'=>'DELETE',
-                            'url' => ['donations', $donation->id],
-                            'style' => 'display:inline'
-                        ]) !!}
-                            {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true"/>', array(
-                                    'type' => 'submit',
-                                    'class' => 'btn btn-danger btn-xs',
-                                    'title' => 'Delete Donation',
-                                    'onclick'=>'return confirm("Confirm delete?")'
-                            ))!!}
-                        {!! Form::close() !!}
-                        <br/>
-                        <br/>
-
                         <div class="table-responsive">
                             <table class="table table-borderless">
                                 <tbody>
-                                    <tr>
-                                        <th>ID</th><td>{{ $donation->id }}</td>
-                                    </tr>
-                                    <tr><th> Doniram </th><td> {{ $donation->doniram }} </td></tr><tr><th> Opis </th><td> {{ $donation->opis }} </td></tr><tr><th> Kolicina </th><td> {{ $donation->kolicina }} </td></tr>
+                                    <tr><th> Doniram </th><td> {{ $donation->doniram }} </td></tr>
+                                    <tr><th> Opis </th><td> {{ $donation->opis }} </td></tr>
+                                    <tr><th> Kolicina </th><td> {{ $donation->kolicina }} </td></tr>
+                                    <tr><th> Ime i prezime </th><td> {{ $donation->ime }} {{ $donation->prezime }} </td></tr>
+                                    <tr><th> Kontakt e-mail </th><td> {{ $donation->email }} </td></tr>
+                                    <tr><th> Kontakt telefon </th><td> {{ $donation->telefon }} </td></tr>
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </div>

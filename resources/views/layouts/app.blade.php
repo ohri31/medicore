@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -79,6 +80,7 @@
         </nav>
 
         @yield('content')
+        @include('layouts.footer')
     </div>
 
     <!-- Scripts -->

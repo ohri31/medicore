@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Donation;
 use Illuminate\Http\Request;
 use Session;
+use Auth;
 
 class DonationsController extends Controller
 {
@@ -18,6 +19,7 @@ class DonationsController extends Controller
      */
     public function index()
     {
+        if(!Auth::check()) return redirect('home');
         $donations = Donation::paginate(25);
 
         return view('donations.index', compact('donations'));
@@ -42,9 +44,9 @@ class DonationsController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $requestData = $request->all();
-        
+
         Donation::create($requestData);
 
         Session::flash('flash_message', 'Donation added!');
@@ -61,6 +63,7 @@ class DonationsController extends Controller
      */
     public function show($id)
     {
+        if(!Auth::check()) return redirect('home');
         $donation = Donation::findOrFail($id);
 
         return view('donations.show', compact('donation'));
@@ -75,6 +78,7 @@ class DonationsController extends Controller
      */
     public function edit($id)
     {
+        if(!Auth::check()) return redirect('home');
         $donation = Donation::findOrFail($id);
 
         return view('donations.edit', compact('donation'));
@@ -90,9 +94,9 @@ class DonationsController extends Controller
      */
     public function update($id, Request $request)
     {
-        
+        if(!Auth::check()) return redirect('home');
         $requestData = $request->all();
-        
+
         $donation = Donation::findOrFail($id);
         $donation->update($requestData);
 
@@ -110,6 +114,7 @@ class DonationsController extends Controller
      */
     public function destroy($id)
     {
+        if(!Auth::check()) return redirect('home');
         Donation::destroy($id);
 
         Session::flash('flash_message', 'Donation deleted!');

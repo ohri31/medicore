@@ -23,7 +23,7 @@
                             'files' => true
                         ]) !!}
 
-                        @include ('donations.form', ['submitButtonText' => 'Update'])
+                        @include ('donations.form', ['submitButtonText' => 'Spremi promjene'])
 
                         {!! Form::close() !!}
 
