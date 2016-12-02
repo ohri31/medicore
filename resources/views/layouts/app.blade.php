@@ -37,7 +37,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <img src="{{ url('img/fabrika-srece.png') }}" style="height:42px;margin-top:-10px;"/>
                     </a>
                 </div>
 
