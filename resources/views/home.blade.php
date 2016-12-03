@@ -32,4 +32,32 @@
       </div>
   </div>
 </div>
+
+
+<div class="part">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <img src="{{ url('img/mockup.png')}}" style="width:100%;" />
+        </div>
+        <div class="col-md-7 col-sm-12" style="margin-bottom:30px;">
+          <h2>FS Widget - Build the community!</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla ut sem vitae iaculis. Vivamus at lacinia augue, feugiat ultricies justo. Nulla id varius erat. Fusce pharetra felis vitae est molestie, ac blandit felis vestibulum. Sed eget orci in augue scelerisque scelerisque. Vestibulum sollicitudin, metus et iaculis bibendum, nulla augue ornare leo, nec tincidunt orci enim in ligula. Praesent elit elit, tristique a tristique quis, elementum at odio. Quisque orci nulla, pellentesque et euismod sed, convallis pharetra ex. Nullam rhoncus, enim ut suscipit sagittis, erat diam vestibulum nisi, et gravida risus odio sed elit. Praesent volutpat vitae ipsum ac mollis. Donec non posuere dui. Integer diam nunc, laoreet eget ligula porttitor, laoreet condimentum felis. Nullam venenatis nunc augue. Integer vitae sapien orci.
+        </div>
+
+
+        <div class="col-sm-12" style="padding:0;">
+          <div class="col-md-4 col-sm-12">
+            <a href="#" class="col-md-12 btn btn-default btnfix"><i class="fa fa-github"></i> Get on Github</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="#" class="col-md-12 btn btn-default btnfix"><i class="fa fa-code"></i>  Get code snippet</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="#" class="col-md-12 btn btn-default btnfix"><i class="fa fa-wordpress"></i>  Wordpress plugin</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 @endsection

@@ -67,8 +67,8 @@ class DonationsController extends Controller
      */
     public function store(Request $request)
     {
-
         $requestData = $request->all();
+        $requestData = $requestData['kol'].' '.$requestData['jedinica'];
 
         Donation::create($requestData);
 

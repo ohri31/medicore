@@ -39,7 +39,7 @@
 
                     {!! Form::open(['url' => '/frameplugin', 'class' => 'form-horizontal', 'files' => true]) !!}
 
-                    @include ('donations.form')
+                    @include ('donations.formplugin')
 
                     {!! Form::close() !!}
 
