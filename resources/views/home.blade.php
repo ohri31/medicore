@@ -16,12 +16,20 @@
 </div>
 <!-- Endof cover image and call to action -->
 
-<div class="container">
-    <div class="row">
+<div class="part">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12" style="text-align:right;">
+          <h2>O Fabrici sreće</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla ut sem vitae iaculis. Vivamus at lacinia augue, feugiat ultricies justo. Nulla id varius erat. Fusce pharetra felis vitae est molestie, ac blandit felis vestibulum. Sed eget orci in augue scelerisque scelerisque. Vestibulum sollicitudin, metus et iaculis bibendum, nulla augue ornare leo, nec tincidunt orci enim in ligula. Praesent elit elit, tristique a tristique quis, elementum at odio. Quisque orci nulla, pellentesque et euismod sed, convallis pharetra ex. Nullam rhoncus, enim ut suscipit sagittis, erat diam vestibulum nisi, et gravida risus odio sed elit. Praesent volutpat vitae ipsum ac mollis. Donec non posuere dui. Integer diam nunc, laoreet eget ligula porttitor, laoreet condimentum felis. Nullam venenatis nunc augue. Integer vitae sapien orci.
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>Supporter club</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla ut sem vitae iaculis. Vivamus at lacinia augue, feugiat ultricies justo. Nulla id varius erat. Fusce pharetra felis vitae est molestie, ac blandit felis vestibulum. Sed eget orci in augue scelerisque scelerisque. Vestibulum sollicitudin, metus et iaculis bibendum, nulla augue ornare leo, nec tincidunt orci enim in ligula. Praesent elit elit, tristique a tristique quis, elementum at odio. Quisque orci nulla, pellentesque et euismod sed, convallis pharetra ex. Nullam rhoncus, enim ut suscipit sagittis, erat diam vestibulum nisi, et gravida risus odio sed elit. Praesent volutpat vitae ipsum ac mollis. Donec non posuere dui. Integer diam nunc, laoreet eget ligula porttitor, laoreet condimentum felis. Nullam venenatis nunc augue. Integer vitae sapien orci.
+        </div>
+        <div class="clearfix"></div>
 
-
-
-
-    </div>
+      </div>
+  </div>
 </div>
 @endsection
