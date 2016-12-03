@@ -20,5 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/subscribe', 'SubscribeController@index');
 Route::post('/subscribe', 'SubscribeController@store');
+Route::get('/frameplugin', 'DonationsController@frame');
+Route::post('/frameplugin', 'DonationsController@store_frame');
+Route::get('/frameplugin/success', 'DonationsController@success');
 
 Route::resource('donations', 'DonationsController');

@@ -49,6 +49,16 @@ class DonationsController extends Controller
     }
 
     /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function success()
+    {
+        return view('donations.success');
+    }
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param \Illuminate\Http\Request $request
@@ -82,6 +92,33 @@ class DonationsController extends Controller
         return view('donations.show', compact('donation'));
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function frame()
+    {
+        return view('donations.frame');
+    }
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function store_frame(Request $request)
+    {
+
+        $requestData = $request->all();
+
+        Donation::create($requestData);
+
+        Session::flash('flash_message', 'Donation added!');
+
+        return redirect('/frameplugin/success');
+    }
     /**
      * Show the form for editing the specified resource.
      *
