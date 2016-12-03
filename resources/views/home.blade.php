@@ -10,8 +10,8 @@
 
       <hr style="border-color:#e7e7e7;width:20%;margin-top:25px;"/>
 
-    <a class="btn btn-success col-md-offset-4 col-md-4 col-sm-12 btnfix">Doniraj</a>
-    <a class="btn btn-default col-md-offset-4 col-md-4 col-sm-12 btnfix">Budi aktivan</a>
+    <a class="btn btn-success col-md-offset-4 col-md-4 col-sm-12 btnfix" href="{{url('/donations/create')}}">Doniraj</a>
+    <a class="btn btn-default col-md-offset-4 col-md-4 col-sm-12 btnfix" href="{{url('/subscribe')}}">Budi aktivan</a>
   </div>
 </div>
 <!-- Endof cover image and call to action -->
