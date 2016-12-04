@@ -9,8 +9,42 @@
                 <div class="panel-body">
                   <form action="" method="get">
                     <div class="form-group">
+                      <label>Donacija:</label>
+                      {!! Form::select('doniram', array(
+                          'FINANCIJSKA_POMOC'       => 'Financijska pomoć',
+                          'HRANA'                   => 'Hrana',
+                          'SRED_ZA_LINCNU_HIGIJENU' => 'Sredstva za ličnu higijenu',
+                          'SRED_ZA_CISCENJE'        => 'Sredstva za čišćenje',
+                          'ODJECA'                  => 'Odjeća',
+                          'OBUCA'                   => 'Obuća',
+                          'SPORTSKA_OPREMA'         => 'Sportska oprema',
+                          'ZASTITNA_OPREMA'         => 'Zaštitna oprema',
+                          'BIJELA_TEHNIKA'          => 'Bijela tehnika',
+                          'PRIBOR_ZA_RADIONICE'     => 'Pribor za radionice',
+                          'DJECIJE_IGRACKE'         => 'Dječije igračke',
+                          'OSTALO'                  => 'Ostalo'
+                          ), null, ['class' => 'form-control'])
+                      !!}
+                      {!! $errors->first('doniram', '<p class="help-block">:message</p>') !!}
+                    </div>
+                    <div class="form-group">
                       <label>Lokacija:</label>
-                      <input name="lokacija" type="text" class="form-control" />
+                      {!! Form::select('lokacija', array(
+                              'SARAJEVO'   => 'Sarajevo',
+                              'ZENICA'     => 'Zenica',
+                              'BANJA_LUKA' => 'Banja Luka',
+                              'MOSTAR'     => 'Mostar',
+                              'TUZLA'      => 'Tuzla',
+                              'BIHAC'      => 'Bihać',
+                              'TRAVNIK'    => 'Travnik',
+                              'MOSTAR'     => 'Mostar',
+                              'NEUM'       => 'Neum',
+                              'DOBOJ'      => 'Doboj',
+                              'OTHER'      => 'Drugo'
+
+                          ), null, ['class' => 'form-control'])
+                      !!}
+                      {!! $errors->first('lokacija', '<p class="help-block">:message</p>') !!}
                     </div>
                     <div class="form-group">
                       <label>Tip donacije:</label>

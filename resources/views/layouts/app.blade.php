@@ -52,9 +52,10 @@
                         <li><a href="{{ url('/halloffame') }}">Hall of Fame</a></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                            <li><a href="{{ url('/register') }}">Register</a></li>
+                            <!--<li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>-->
                         @else
+                          <li><a href="{{ url('/donations') }}">Pretraga registra</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -86,5 +87,14 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+
+    <script>
+    function zatrazi_donaciju(){
+      var item = prompt("Detaljne informacije o potencijalnoj namjeni donacije", "");
+      if (item != null) {
+        alert("Uspješno! Molimo Vas sačekajte potvrdu od donatora.");
+      }
+    }
+    </script>
 </body>
 </html>
