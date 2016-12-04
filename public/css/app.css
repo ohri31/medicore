@@ -179,3 +179,17 @@
 	font-size: 18px;
 	margin: 0px;
 }
+
+input[type="text"].btnfix{
+  font-weight: 400;
+}
+
+@media only screen and (max-width : 768px) {
+  .cover-image h1{font-size: 24px;}
+  .cover-image{height:720px!important;padding-top:20px!important;}
+  .cover-image .opis{font-size: 16px!important;}
+  .short-cover{height:520px!important;}
+  .al-c{text-align: center!important;}
+  .custom-form .command-line .button{width: 100%;border-left:0!important;}
+  .custom-form{margin:0!important;border-bottom:0!important;}
+}
