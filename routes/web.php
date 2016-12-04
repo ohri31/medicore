@@ -25,5 +25,6 @@ Route::post('/subscribe', 'SubscribeController@store');
 Route::get('/frameplugin', 'DonationsController@frame');
 Route::post('/frameplugin', 'DonationsController@store_frame');
 Route::get('/frameplugin/success', 'DonationsController@success');
+Route::get('/halloffame', 'SupportController@index');
 
 Route::resource('donations', 'DonationsController');
