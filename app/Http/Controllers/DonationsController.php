@@ -74,7 +74,7 @@ class DonationsController extends Controller
 
         Session::flash('flash_message', 'Donation added!');
 
-        return redirect('donations');
+        return redirect('/');
     }
 
     /**
