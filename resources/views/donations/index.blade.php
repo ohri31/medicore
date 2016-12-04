@@ -46,14 +46,7 @@
                       !!}
                       {!! $errors->first('lokacija', '<p class="help-block">:message</p>') !!}
                     </div>
-                    <div class="form-group">
-                      <label>Tip donacije:</label>
-                      <input name="tipdonacije" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <label>Ključna riječ:</label>
-                      <input name="keyword" type="text" class="form-control" />
-                    </div>
+                  +
                     <input type="submit" class="btn btn-primary btnfix col-sm-12" value="Pretraži" />
                   </form>
                 </div>

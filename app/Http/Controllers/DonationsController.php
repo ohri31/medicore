@@ -23,15 +23,13 @@ class DonationsController extends Controller
 
         if($request != null){
           $lokacija     = $request->input('lokacija');
-          //$tipdonacije  = $request->input('tipdonacije');
-          $keyword      = $request->input('keyword');
+          $tipdonacije  = $request->input('tipdonacije');          
         }
 
         $d = Donation::query();
 
         if($lokacija != "" && $lokacija != null) $d->where('lokacija', '=', $lokacija);
-        //if($tipdonacije != "" && $tipdonacije != null) $d->where('tipdonacije', '=', $tipdonacije);
-        if($keyword != "" && $keyword != null) $d->where('doniram', 'LIKE', $keyword.'%');
+        if($tipdonacije != "" && $tipdonacije != null) $d->where('doniram', '=', $tipdonacije);
 
         $donations = $d->latest()->paginate(10);
 
