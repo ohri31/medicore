@@ -46,7 +46,7 @@
                       !!}
                       {!! $errors->first('lokacija', '<p class="help-block">:message</p>') !!}
                     </div>
-                  +
+                  
                     <input type="submit" class="btn btn-primary btnfix col-sm-12" value="Pretraži" />
                   </form>
                 </div>

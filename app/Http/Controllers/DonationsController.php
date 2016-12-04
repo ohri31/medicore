@@ -23,7 +23,7 @@ class DonationsController extends Controller
 
         if($request != null){
           $lokacija     = $request->input('lokacija');
-          $tipdonacije  = $request->input('tipdonacije');          
+          $tipdonacije  = $request->input('doniram');          
         }
 
         $d = Donation::query();
