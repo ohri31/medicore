@@ -4,10 +4,9 @@
       <div class="col-md-3 col-sm-12">
         <h4>Fabrika sreće links</h4>
           <hr />
-        <a href="#">Landing page</a>
-        <a href="#">Budi aktivan</a>
-        <a href="#">Organizacija login</a>
-        <a href="#">Kontakt</a>
+        <a href="{{ url('') }}">Landing page</a>
+        <a href="{{ url('subscribe')}}">Budi aktivan</a>
+        <a href="{{ url('login') }}">Organizacija login</a>
       </div>
       <div class="col-md-3 col-sm-12">
         <h4>Social media</h4>
@@ -24,9 +23,9 @@
       <div class="col-md-3 col-sm-12">
         <h4>Kako mogu pomoći?</h4>
           <hr />
-        <a href="#">Doniraj hranu/sredstva/drugo</a>
-        <a href="#">Pretplati se na mailing listu</a>
-        <a href="#">Podrži rad servisa</a>
+        <a href="{{ url('donation/create') }}">Doniraj hranu/sredstva/drugo</a>
+        <a href="{{ url('subscription') }}">Pretplati se na mailing listu</a>
+        <a href="{{ url('kickstart') }}">Podrži rad servisa</a>
       </div>
     </div>
   </div>
