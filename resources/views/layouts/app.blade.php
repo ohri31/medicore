@@ -95,6 +95,13 @@
         alert("Uspješno! Molimo Vas sačekajte potvrdu od donatora.");
       }
     }
+
+    function prijava(){
+      var item = prompt("Razlog prijave", "");
+      if (item != null) {
+        alert("Hvala Vam. Naši administratori će pregledati prijavu.");
+      }
+    }
     </script>
 </body>
 </html>

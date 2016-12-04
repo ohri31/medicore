@@ -33,7 +33,7 @@
                           <i class="fa fa-check-circle-o"></i> Verifikovana donacija
                         </div>-->
 
-                        <a class="btn btn-success pull-right col-sm-12 col-xs-12 col-md-3" style="margin-left:15px;margin-bottom:15px;" href="javascript:zatrazi_donaciju()">Zatraži donaciju</a>
+                        <a class="btn btn-success pull-right col-sm-12 col-xs-12 col-md-3" style="margin-left:15px;margin-bottom:15px;" href="javascript:prijava()">Zatraži donaciju</a>
                         <a class="btn btn-danger pull-right col-sm-12 col-xs-12 col-md-3" href="javascript:zatrazi_donaciju()">Prijavi donaciju</a>
                     </div>
 
